@@ -1,0 +1,21 @@
+save_folder_name = "cat2_monster_toy"
+pipe_id = "stabilityai/stable-diffusion-xl-base-1.0"
+prompt = "[D] cat, [O] monster_toy, best quality, masterpiece"
+neg_prompt = ""
+batch_size = 4
+num_batches = 1
+
+[[loras]]
+file_path = "zhangandi001/SDXL_Dreambooth_LoRAs"
+file_name = "cat2.safetensors"
+adapter_name = "cat2"
+dropout_rate = 0.5
+adapter_weight = 1.0
+
+[[loras]]
+file_path = "zhangandi001/SDXL_Dreambooth_LoRAs"
+file_name = "monster_toy.safetensors"
+adapter_name = "monster_toy"
+dropout_rate = 0.5
+adapter_weight = 1.0
+            
