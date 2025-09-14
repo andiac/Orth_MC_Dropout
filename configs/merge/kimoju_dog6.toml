@@ -1,0 +1,21 @@
+save_folder_name = "kimoju_dog6"
+
+pipe_id = "stabilityai/stable-diffusion-xl-base-1.0"
+prompt = "kimo_ju, [V] dog, best quality, masterpiece"
+neg_prompt = ""
+batch_size = 4
+num_batches = 4
+
+[[loras]]
+file_path = "zhangandi001/SDXL_Dreambooth_LoRAs"
+file_name = "dog6.safetensors"
+adapter_name = "dog6"
+dropout_rate = 0.5
+adapter_weight = 1.0
+
+[[loras]]
+file_path = "zhangandi001/SDXL_Kimoju_LoRA"
+file_name = "kimoju.safetensors"
+adapter_name = "kimoju"
+dropout_rate = 0.5
+adapter_weight = 1.0

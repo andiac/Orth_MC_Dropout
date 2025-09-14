@@ -1,0 +1,21 @@
+save_folder_name = "duck_toy_yarn"
+
+pipe_id = "stabilityai/stable-diffusion-xl-base-1.0"
+prompt = "[B] duck, guaguazhenzhi (style), best quality"
+neg_prompt = ""
+batch_size = 4
+num_batches = 1
+
+[[loras]]
+file_path = "anonymousrepos/SDXL_LoRA_Models"
+file_name = "community/yarn.safetensors"
+adapter_name = "yarn"
+dropout_rate = 0.5
+adapter_weight = 1.0
+
+[[loras]]
+file_path = "anonymousrepos/SDXL_LoRA_Models"
+file_name = "trained/duck_toy.safetensors"
+adapter_name = "duck_toy"
+dropout_rate = 0.5
+adapter_weight = 1.0

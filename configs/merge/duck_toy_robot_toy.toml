@@ -1,0 +1,21 @@
+save_folder_name = "duck_toy_robot_toy"
+pipe_id = "stabilityai/stable-diffusion-xl-base-1.0"
+prompt = "[B] duck, [b] robot_toy, best quality, masterpiece"
+neg_prompt = ""
+batch_size = 4
+num_batches = 1
+
+[[loras]]
+file_path = "zhangandi001/SDXL_Dreambooth_LoRAs"
+file_name = "duck_toy.safetensors"
+adapter_name = "duck_toy"
+dropout_rate = 0.5
+adapter_weight = 1.0
+
+[[loras]]
+file_path = "zhangandi001/SDXL_Dreambooth_LoRAs"
+file_name = "robot_toy.safetensors"
+adapter_name = "robot_toy"
+dropout_rate = 0.5
+adapter_weight = 1.0
+            

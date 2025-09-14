@@ -1,0 +1,13 @@
+save_folder_name = "kimoju"
+
+pipe_id = "stabilityai/stable-diffusion-xl-base-1.0"
+prompt = "kimo_ju and balloons, best quality, masterpiece"
+neg_prompt = ""
+batch_size = 4
+num_batches = 1
+
+[[loras]]
+file_path = "zhangandi001/SDXL_Kimoju_LoRA"
+file_name = "kimoju.safetensors"
+adapter_name = "kimoju"
+adapter_weight = 1.0
