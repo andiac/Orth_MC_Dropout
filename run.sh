@@ -8,15 +8,16 @@ MERGE_CASE_NAMES=(
 
 SINGLE_CASE_NAMES=(
     "keqing"
-    # "dog6"
+    "kimoju"
+    "dog6"
 )
 
-# for CASE_NAME in ${MERGE_CASE_NAMES[@]}; do
-#     python direct_merge.py --config ./configs/merge/${CASE_NAME}.toml
-#     python dropout_merge.py --config ./configs/merge/${CASE_NAME}.toml
-#     python dropout_merge.py --config ./configs/merge/${CASE_NAME}.toml --orthogonal
-#     python concatenate.py --case_name ${CASE_NAME}
-# done
+for CASE_NAME in ${MERGE_CASE_NAMES[@]}; do
+    python direct_merge.py --config ./configs/merge/${CASE_NAME}.toml
+    python dropout_merge.py --config ./configs/merge/${CASE_NAME}.toml
+    python dropout_merge.py --config ./configs/merge/${CASE_NAME}.toml --orthogonal
+    python concatenate.py --case_name ${CASE_NAME}
+done
 
 for CASE_NAME in ${SINGLE_CASE_NAMES[@]}; do
     for dropout in 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9; do
