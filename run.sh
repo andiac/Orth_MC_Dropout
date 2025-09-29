@@ -7,8 +7,8 @@ MERGE_CASE_NAMES=(
 )
 
 SINGLE_CASE_NAMES=(
-    "kimoju"
-    "dog6"
+    "keqing"
+    # "dog6"
 )
 
 # for CASE_NAME in ${MERGE_CASE_NAMES[@]}; do
