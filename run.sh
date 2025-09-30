@@ -20,7 +20,7 @@ for CASE_NAME in ${MERGE_CASE_NAMES[@]}; do
 done
 
 for CASE_NAME in ${SINGLE_CASE_NAMES[@]}; do
-    for dropout in 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9; do
+    for dropout in 0.1 0.3 0.5 0.7 0.9; do
     python single_lora.py --config ./configs/single/${CASE_NAME}.toml --dropout ${dropout}
     done
 done
