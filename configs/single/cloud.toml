@@ -1,0 +1,13 @@
+save_folder_name = "cloud"
+
+pipe_id = "stabilityai/stable-diffusion-xl-base-1.0"
+prompt = "cloud that looks like, dragon, best quality"
+neg_prompt = ""
+batch_size = 4
+num_batches = 1
+
+[[loras]]
+file_path = "joachimsallstrom/aether-cloud-lora-for-sdxl"
+file_name = "Aether_Cloud_v1.safetensors"
+adapter_name = "cloud"
+adapter_weight = 1.0
