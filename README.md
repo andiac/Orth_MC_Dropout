@@ -12,16 +12,25 @@ bash run.sh
 
 After execution:
 
-* Generated images will be saved in `./output`
-* Concatenated preview images will be available in `./concat_img`
+* Generated images of direct merge, dropout merge, and orthogonal merge will be saved in `./output`
+* Concatenated preview images of the three methods will be available in `./concat_img`
+* The results of evaluating redundancy of the dropout rate will be saved in `./output_single_lora`
 
-## Adding a New Case
+## Adding a New Case for Merging
 
-1. Add a configuration file in `.toml` format to the `./configs` folder.
-2. Add the case name to the `CASE_NAMES` list in `run.sh`.
+1. Add a configuration file in `.toml` format to the `./configs/merge` folder.
+2. Add the case name to the `MERGE_CASE_NAMES` list in `run.sh`.
 3. Make sure the `save_folder_name` property inside the `.toml` file matches the filename (excluding the extension).
 
-You can refer to the sample configs provided in this repository for guidance.
+Refer to the sample configs in this repository for examples.
+
+## Adding a New Case for Single LoRA with Different Dropout Rates
+
+1. Add a configuration file in `.toml` format to the `./configs/single` folder.
+2. Add the case name to the `SINGLE_CASE_NAMES` list in `run.sh`.
+3. Make sure the `save_folder_name` property inside the `.toml` file matches the filename (excluding the extension).
+
+Refer to the sample configs in this repository for examples.
 
 ## Showcase
 
